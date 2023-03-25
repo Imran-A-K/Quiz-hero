@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Difference Between map,  filter, forEach and find array methods....</h1>
+    <p>map() method goes through each element of the array and executes the given function at each element. It then returns a new array with the results and it doesn't alter the original array.</p>
+    <p>filter() method returns a shallow copy of the array filled with elements that passes the tests provided by the method function.</p>
+    <p>forEach() method is used to execute the same code on each element of the array but it doesn't return anything.It just iterates over the array and executes the given code on them</p>
+    <p>find() method returns the first element of the array that satisfies the condition given in the method function. </p>
+    <h1>Difference between local storage, session storage and cookies ....</h1>
+    <p>Local storage: local storage is used to store data on the client side that remains at the browser even after closing it. This can be accessed later on.</p>
+    <p>Session storage: Here the data is only stored for the session which will be deleted when a tab/window is closed which ends the session </p>
+    <p>Cookies: cookies are used to store data with a time limit. After they expire they are automatically deleted.</p>
+    <h1>Event Loop</h1>
+    <p>Event Loop is the model architecture which is responsible for executing the code,collecting and processing events and executing queued sub tasks.It is responsible to decide when the asynchronous operations will
+         be sent to the call stack by which the order of execution of the operations are defined.It uses event queue which is responsible for sending new functions to the stack for processing. Whenever
+          an async function is called, it is sent to a browser API. These are APIs built into the browser. Based on the command received from the call stack, the API starts its own single-threaded operation.
+          The operations are sent to the event queue which is responsible for sending new functions to the stack for processing. It follows the queue data structure to maintain the correct sequence in which all 
+          operations should be sent for execution.</p>
+
+    <h1>noChange.js functions</h1>
+    <h2>quizTimer Function</h2>
+    <p>The quiz timer calculates the total time taken by the user to complete the quiz. There is a setInterval method placed on the timer variable. The count variable
+        is used to count every second by incrementing its value after every second. It is designed to show minutes and seconds separately. After that the passed time is updated
+        every second at the h1 tag containing the id 'count'. If the count is within the 60 second mark then passed time is displayed in green color. If a minute passes then it 
+        displays the total passed time in two shades of red color sequentially. It toggles the color depending on the passed time is even or odd.<br>
+        If the parameter at the quizTimer function is set to true it clears the interval at the timer variable and then dismisses the function. Then the timer stops and the total time the user took 
+        to complete the Quiz remains on the h1 tag holding id - count.   
+    </p>
+    <h2>chooseQuiz Function</h2>
+    <p>chooseQuiz function does the work of collecting the answers given by the user. It takes the options chosen from the user as given answer and pushes it to answer-Array with all the information of the question including the correct answer of the question. If the user has already answered the 
+        particular answer before and the user wants to change his answer then upon changing the answer the function goes to the particular index of the answer-array where the previous given answer was stored and deletes the previous data of that index and stores the current given answer and  with all the information of the question including the correct answer of the question. It then passes the answer Array as parameter to displayAnswers function.</p>
+</body>
+</html>
